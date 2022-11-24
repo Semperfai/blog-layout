@@ -2801,7 +2801,7 @@ button.swiper-pagination-bullet {
     background-image: linear-gradient(to bottom, rgba(194, 181, 181, 0.6) 0%, rgba(14, 11, 11, 0.6) 100%), url("../img/01.jpg"); }
 
   .menu__list {
-    display: block;
+    flex-direction: column;
     text-align: center;
     -webkit-transform: translate(0px, -400%);
         -ms-transform: translate(0px, -400%);
@@ -2818,7 +2818,6 @@ button.swiper-pagination-bullet {
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: center center;
-    padding: 0 28%;
     overflow: auto;
   }
 
