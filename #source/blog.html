@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main id="blog" class="page-blog">
+			<div class="page-blog__container">
+				<div class="page-blog__content">
+					<h1 class="page-blog__title title">Blog</h1>
+					<div class="page-blog__sort">
+						<div class="page-blog__tags">
+							<a id="frontendTeg" href="##" class="page-blog__tag link">
+								Frontend
+							</a>
+							<a id="tipsTeg" href="##" class="page-blog__tag link">
+								Tips
+							</a>
+							<a id="javaScriptTeg" href="##" class="page-blog__tag link">
+								JavaScript
+							</a>
+							<a id="selfEducationTeg" href="##" class="page-blog__tag link">
+								Self-education
+							</a>
+							<a id="reactTeg" href="##" class="page-blog__tag link">
+								React
+							</a>
+							<a id="softSkillTeg" href="##" class="page-blog__tag link">
+								Soft skills
+							</a>
+						</div>
+						<select data-submit data-scroll name="form[]" data-class-modif="form">
+							<option value="" selected>Сортування за :</option>
+							<option value="2">Date</option>
+							<option value="3">Views</option>
+							<option value="4">Tags</option>
+						</select>
+					</div>
+					<div class="page-blog__posts">
+						<div class="page-blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/01.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a id="frontendTeg" href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a id="tipsTeg" href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/02.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/03.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/01.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a id="frontendTeg" href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a id="tipsTeg" href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/02.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/03.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/04.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/02.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/03.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/01.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a id="frontendTeg" href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a id="tipsTeg" href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/02.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/03.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/04.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/03.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+						<div class="blog__post post">
+							<div class="post__img-ibg">
+								<a href="##"><img src="@img/blog/04.png" alt="posts"></a>
+							</div>
+							<div class="post__tags">
+								<a href="##" class="post__tag link">
+									Frontend
+								</a>
+								<a href="##" class="post__tag link">
+									Tips
+								</a>
+							</div>
+							<h3 class="post__title">Lorem, ipsum dolor.</h3>
+							<a href="##">
+								<p class="post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+									molestias iste, tenetur ex aliquid vitae quo veritatis est itaque cumque.</p>
+							</a>
+							<div class="post__date-info">
+								<a href="##" class="post__date">5.05.2022</a>
+								<div class="post__views">48</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

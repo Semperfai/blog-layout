@@ -1,0 +1,56 @@
+// Заголовки, общие БЄМ блоки и проче...
+.mybg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	img {
+		display: none;
+	}
+}
+
+.title {
+	@include adaptiveValue("font-size", 55, 22, 2, 1200, 150);
+	color: #ffff;
+	text-align: center;
+	@include adaptiveValue("margin-bottom", 50, 20, 2, 1680, 220);
+}
+
+.subtitle {
+	@include adaptiveValue("font-size", 33, 15, 2, 1200, 150);
+	text-align: center;
+	color: #ffff;
+}
+
+.text {
+	text-align: center;
+	@include adaptiveValue("font-size", 22, 12, 2, 1200, 150);
+	color: rgb(14, 12, 12);
+}
+
+
+.link {
+	background: linear-gradient(130.68deg, #ebe9e9 0%, #8d8787 100.52%);
+	font-weight: 900;
+	padding: 10px;
+	@include adaptiveValue("font-size", 25, 12, 2, 1680, 220);
+	line-height: 50%;
+	color: #701616;
+	box-shadow: 0px 0px 3px 3px rgba(14, 11, 11, 0.6);
+
+	@media (max-width:$tablet) {
+		line-height: 40%;
+	}
+
+	&:hover {
+		transform: scale(1.2);
+		transition: 0.3s;
+		color: #0a0a09;
+		box-shadow: 0px 0px 7px 7px rgba(109, 9, 9, 0.6);
+	}
+
+	&:active {
+		transform: rotate(-380deg);
+	}
+
+}

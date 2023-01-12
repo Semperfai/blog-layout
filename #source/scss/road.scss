@@ -1,0 +1,30 @@
+//!==========================================Road Map==========================================================	
+
+.page-road-map {
+
+	@include adaptiveValue("padding-top", 120, 50, 2, 1680, 220);
+	@include adaptiveValue("padding-bottom", 100, 50, 2, 1680, 220);
+	background-color: rgb(214, 210, 210);
+	// .page-road-map__container
+
+	&__container {}
+
+	// .page-road-map__title
+	&__title {
+		color: black;
+
+		@media (max-width:$mobile) {
+			margin-top: 50px;
+		}
+	}
+
+	&__subtitle {
+		color: black;
+		margin-bottom: 30px;
+	}
+
+	// .page-road-map__map-ibg
+	&__map-ibg {
+		padding-bottom: 275%;
+	}
+}

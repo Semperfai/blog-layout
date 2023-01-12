@@ -1,0 +1,155 @@
+.page-blog {
+
+	// .page__blog
+
+	&__blog {}
+}
+
+.page-blog {
+	@include adaptiveValue("padding-top", 120, 50, 2, 1680, 220);
+	@include adaptiveValue("padding-bottom", 100, 50, 2, 1680, 220);
+	background: url('@img/decor/02.png') center/cover no-repeat;
+	box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+	// .blog__container
+
+	&__container {}
+
+	// .blog__content
+
+	&__content {}
+
+	// .blog__title
+
+	&__title {
+		@media (max-width:$mobile) {
+			margin-top: 50px;
+		}
+	}
+
+	// .blog__more
+
+	&__more {
+		display: flex;
+		justify-content: flex-end;
+		@include adaptiveValue("margin-bottom", 30, 10, 2, 1680, 220);
+	}
+
+
+	// .page-blog__sort
+
+	&__sort {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiveValue("margin-bottom", 40, 20, 2, 1680, 220);
+
+		@media (max-width:$mobile) {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+	}
+
+	// .page-blog__tags
+
+	&__tags {
+		display: flex;
+
+		@media (max-width:$mobile) {
+			display: none;
+		}
+	}
+
+	&__tag {
+		margin-left: 20px;
+
+		@media (max-width:$mobile) {
+			align-self: flex-start;
+			margin-bottom: 20px;
+		}
+	}
+
+	// .blog__posts
+
+	&__posts {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		@media (max-width:$tablet) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width:$mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+}
+
+
+
+
+// Главный блок
+.select {
+	width: 180px;
+
+	@media (max-width:$mobile) {
+		margin-left: 20px;
+	}
+
+	&__value {
+		background: linear-gradient(130.68deg, #c2c5c5 0%, #e9e1e1 100.52%)
+	}
+
+	&__body {
+		@include adaptiveValue("font-size", 22, 12, 2, 1680, 220);
+		border-radius: 8px;
+		color: #701616;
+		box-shadow: 0px 0px 3px 4px rgba(14, 11, 11, 0.4);
+
+		@media (max-width:$mobile) {
+			max-width: 150px;
+		}
+	}
+
+
+	&__content {}
+
+	&__options {
+		margin-top: 5px;
+		padding: 0px;
+	}
+
+
+	&__option {
+		border-top: #b8b8b8 1px solid;
+	}
+}
+
+
+.select__value:after {
+	background: url('@img/blog/arrow.svg') right no-repeat;
+}
+
+// select__body — Тело селекта
+// select__title — Заголовок
+// select__value — Значение в заголовке
+// select__label — Лейбл
+// select__input — Поле ввода
+// select__text — Оболочка текстовых данных
+// select__link — Ссылка в элементе
+// select__options — Выпадающий список
+// select__scroll — Оболочка при скролле
+// select__option — Пункт
+// select__content — Оболочка контента в заголовке
+// select__row — Ряд
+// select__asset — Дополнительные данные
+// _select-disabled — Запрещен
+// _select-tag — Класс тега
+// _select-open — Список открыт
+// _select-active — Список выбран
+// _select-focus — Список в фокусе
+// _select-multiple — Мультивыбор
+// _select-checkbox — Стиль чекбокса
+// _select-selected — Выбранный пункт
+// _select-pseudo-label — Псевдолейбл для заголовка селекта

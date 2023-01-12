@@ -1,0 +1,107 @@
+.footer {
+	background: rgb(196, 206, 207);
+	@include adaptiveValue("padding-top", 60, 20, 2, 1680, 220);
+	@include adaptiveValue("padding-bottom", 60, 20, 2, 1680, 220);
+	// .footer__container
+
+	&__container {}
+
+	// .footer__content
+
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include adaptiveValue("font-size", 20, 15, 2, 1680, 220);
+
+		@media (max-width: 650.99px) {
+			justify-content: space-between;
+		}
+	}
+
+	// .footer__contacts
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+
+		svg {
+			margin-bottom: 10px;
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media (max-width: 650.99px) {
+			justify-content: space-evenly;
+			margin-bottom: 30px;
+
+		}
+
+	}
+
+	// .footer__email
+
+	&__email {}
+
+	&__email:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+
+	&__email:hover {
+		color: rgb(129, 41, 41);
+	}
+
+	// .footer__location
+
+	&__location {}
+
+	&__location:hover {
+		color: rgb(129, 41, 41);
+	}
+
+
+	// .footer__social-network
+
+	&__social-network {
+		@media (max-width: 650.99px) {
+			margin-bottom: 50px;
+			display: flex;
+		}
+	}
+
+
+	// .footer__instagram
+
+	&__instagram:hover {
+		color: rgb(129, 41, 41);
+	}
+
+	// .footer__telegram
+	&__telegram {
+		margin-left: 15px;
+
+	}
+
+	&__telegram:hover {
+		margin-left: 15px;
+		color: rgb(129, 41, 41);
+	}
+
+	// .footer__other
+
+	&__other {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	// .footer__copy
+
+	&__copy {
+		text-align: center;
+	}
+}

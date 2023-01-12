@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Road Map</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main id="road-map" class="page-road-map">
+			<div class="page-road-map__container">
+				<h1 class="page-road-map__title title">Road map </h1>
+				<p class="page-road-map__subtitle subtitle">Step by step guide to becoming a modern frontend developer in
+					2022
+				</p>
+				<div class="page-road-map__map-ibg">
+					<img src="@img/decor/frontend1.png" alt="Road map">
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
